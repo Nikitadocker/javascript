@@ -12,6 +12,8 @@
 let login = prompt('Введите ваш логин', '');
 if (login == 'Админ') {
     prompt('Введите ваш пароль', '');
-} else if (login == '') {
+} else if (login == '' || null) {
     alert('Отменено');
+} else {
+    alert('Я вас не знаю');
 }
