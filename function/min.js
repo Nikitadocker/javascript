@@ -8,18 +8,44 @@
 
 
 
-let a = prompt ('Введите число  a');
+// let a = prompt ('Введите число  a');
 
-let b = prompt ('Введите число  b');
+// let b = prompt ('Введите число  b');
+
+
+// function min(a, b) {
+//     if (a > b) {
+//         return  alert ( `Число ${b} меньшее`);
+//     }
+
+//     else {
+//         return  alert ( `Число ${a} меньшее`);
+//     }
+
+// }
+
+// min (a, b);
+
+
+
+
+let a = prompt('Введите число  a');
+
+let b = prompt('Введите число  b');
 
 
 function min(a, b) {
     if (a > b) {
-        return b;
+        return alert(`Число ${b} меньшее`);
+    }
+
+    else if (b > a) {
+        return alert(`Число ${a} меньшее`);
     }
 
     else {
-        return a;
+        return alert(`Числа равны. Выводим ${a}`);
     }
-
 }
+
+min(a, b);
