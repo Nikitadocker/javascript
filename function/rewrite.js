@@ -16,12 +16,24 @@
 // Сделайте два варианта функции checkAge:
 
 // Используя оператор ?
+
+let age = prompt ('Введите ваш age');
+
+
+
+function checkAge(age) {
+  (age > 18) ? true :
+  //  console.log (confirm ('Родители разрешили,?'));
+    confirm('Родители разрешили?');
+}
+
+// checkAge(age);
+
+
 // Используя оператор ||
 
 // function checkAge(age) {
-//   (age > 18) ? true :
-//   //  console.log (confirm ('Родители разрешили,?'));
-//     confirm('Родители разрешили?');
+//   // console.log ((age > 18) == true );
+//   (age > 18) == true  || confirm('Родители разрешили ?');
 // }
-
 // checkAge(20);
