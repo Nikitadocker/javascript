@@ -9,19 +9,26 @@
 
 // пример не предусматривает натуральные значения. просто возводит в степень
 
+function isInteger(num) {
+    return (num % 1) === 0;
+}
+
+let x = prompt('Введите число  x');
+
+let n = prompt('Введите cтепень  n');
+
+function pow(x, n) {
+    console.log('hi');
+    if (n >= 1 && isInteger(n)) {
+
+        let result = x ** n;
+
+        return alert(`Результат возведения числа в степень ${result}`);
+    }
+    else {
+        alert('Cтепень должна быть целым числом и больше 1');
+    }
+}
 
 
-// let x = prompt('Введите число  x');
-
-// let n = prompt('Введите cтепень  n');
-
-// function pow(x, n) {
-
-//     let result = x ** n; 
-
-//     return alert (`Результ возведения числа в степень ${result}`);
-
-// }
-
-
-// pow(x, n);
+pow(x, n);
